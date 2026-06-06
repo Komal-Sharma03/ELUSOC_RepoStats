@@ -11,13 +11,20 @@ export default function Footer() {
             Analyze repository contributions, track development activity, and gain insights.
           </p>
           
-          {/* Added the Cookie Policy link here */}
-          <div className="mt-3">
+          {/* Added the Policy links here */}
+          <div className="mt-3 flex items-center justify-center gap-2 text-xs text-gray-500">
             <Link 
               href="/cookie-policy" 
-              className="text-gray-500 hover:text-white transition-colors underline text-xs"
+              className="hover:text-white transition-colors underline"
             >
               Cookie Policy
+            </Link>
+            <span>•</span>
+            <Link 
+              href="/terms" 
+              className="hover:text-white transition-colors underline"
+            >
+              Terms of Service
             </Link>
           </div>
 
